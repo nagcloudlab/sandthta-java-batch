@@ -23,7 +23,7 @@ public class ValueDataTypesEx {
 
 //        int v=10; // decimal
 //        int v=010; // octal // 1 * 8^1 + 0 * 8^0 = 8
-//        int v=0x10; // octal // 1 * 8^1 + 0 * 8^0 = 8
+//        int v=0x10; // hex // 1 * 16^1 + 0 * 16^0 = 16
 //        int v=0b10; // binary // 1 * 2^1 + 0 * 2^0 = 2
 //        System.out.println(v);
 //        long balance= 100_000_00L;
@@ -51,6 +51,8 @@ public class ValueDataTypesEx {
         System.out.println(booleanVariable2);
 
 
+        int n=0x12; // 1 * 16^1 + 2 * 16^0 = 16 + 2 = 18
+        System.out.println(n);
 
     }
 }
