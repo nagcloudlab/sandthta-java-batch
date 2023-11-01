@@ -1,4 +1,4 @@
-public class ValueDataTypeCastingEx {
+public class ValueTypeCastingEx {
     public static void main(String[] args) {
 
         int x=6;

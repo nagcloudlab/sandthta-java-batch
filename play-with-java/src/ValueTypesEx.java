@@ -1,10 +1,6 @@
-public class ValueDataTypesEx {
+public class ValueTypesEx {
     public static void main(String[] args) {
-
-        // value / primitive types
-
         // 1. numeric
-
         /*
             byte ( 8 )
             short ( 16 )
@@ -13,7 +9,6 @@ public class ValueDataTypesEx {
             float ( 32 )
             double ( 64 )
         */
-
         byte byteVariable=12;
         short shortVariable=1212;
         int intVariable=12121212;
@@ -31,7 +26,6 @@ public class ValueDataTypesEx {
 
 
         //2. character
-
         char characterVariable1='a';
         char characterVariable2=97;
         char characterVariable3=0x61;
@@ -53,6 +47,7 @@ public class ValueDataTypesEx {
 
         int n=0x12; // 1 * 16^1 + 2 * 16^0 = 16 + 2 = 18
         System.out.println(n);
+        System.out.println(Integer.toHexString(n));
 
     }
 }
