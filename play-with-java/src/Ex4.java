@@ -26,19 +26,6 @@ class Account {
         this(0,balance);
     }
     // custom constructor ==> creating account with valid number & balance
-    public Account(double balance, int number){
-//        if(number<=0) {
-//            System.out.println("Invalid Account Number");
-//        }else {
-//            this.number = number;
-//        }
-//        if(balance>0 && balance < 1000) {
-//            this.balance = balance;
-//        }else {
-//            System.out.println("Invalid Account Balance");
-//        }
-        this(number,balance);
-    }
     public Account(int number, double balance){
         if(number<=0) {
             System.out.println("Invalid Account Number");
