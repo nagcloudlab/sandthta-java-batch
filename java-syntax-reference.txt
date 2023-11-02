@@ -143,11 +143,8 @@ step-2 : initialization            : 'constructor'
 
 
 -------------------------------------------------------------------
-8. method
+8. function/method
 --------------------------------------------------------------------
-
-
-function / method
 
 ReturnType => void, Primitive, Reference
 
