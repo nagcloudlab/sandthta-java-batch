@@ -41,8 +41,9 @@ class Account {
 }
 
 
-public class ObjectTypeEx {
+public class Ex4 {
     public static void main(String[] args) {
+
 
         Account a1 = new Account(123); // 32+64 = 96 bytes
         System.out.println(a1.number);
@@ -57,6 +58,8 @@ public class ObjectTypeEx {
         // credit
         a1.balance+=10000.00;
         System.out.println(a1.balance);
+
+
 
     }
 }

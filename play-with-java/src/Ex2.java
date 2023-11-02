@@ -1,4 +1,10 @@
-public class ValueTypesEx {
+/**
+ *
+ *  Value/Primitive Data Type
+ *
+ */
+
+public class Ex2 {
     public static void main(String[] args) {
         // 1. numeric
         /*

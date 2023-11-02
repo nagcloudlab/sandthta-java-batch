@@ -1,4 +1,11 @@
-public class ValueTypeCastingEx {
+
+/*
+
+    Value / Primitive Type Casting
+
+ */
+
+public class Ex3 {
     public static void main(String[] args) {
 
         int x=6;
