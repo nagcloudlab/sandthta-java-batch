@@ -1,0 +1,10 @@
+---
+
+1. Development
+    1. basic tools : compiler,jps,jstack,.. ( JDK )
+    2. build tools : maven,gradle,..
+    3. code editor : eclipse, Intellij IDEA or VS code
+2. Deployment
+    1. JRE
+
+---

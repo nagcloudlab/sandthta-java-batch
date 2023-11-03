@@ -1,0 +1,7 @@
+---
+
+- object based
+- built-in collections
+- concurrency
+- many third-party lib & frameworks for many Req,
+- platform-independent

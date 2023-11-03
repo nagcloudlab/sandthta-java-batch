@@ -1,0 +1,18 @@
+
+
+----------------------------------------------------------------
+Variables
+----------------------------------------------------------------
+
+based on data-type
+
+    1. primitive variables holds values
+    2. reference variables holds objects
+
+based on scope
+
+    1. class/static variables holds class-level data
+    2. object/instance variables holds obj's specific data
+    3. local variables holds operational data within method
+
+

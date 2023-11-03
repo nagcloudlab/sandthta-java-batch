@@ -1,0 +1,23 @@
+---
+
+In Java, data types are used to categorize the types of data that a variable can hold. These data types can be classified into two main categories: primitive data types and reference data types.
+
+1. **Primitive/Value Data Types:**
+These are basic data types provided by Java and are predefined in the language. They are not objects and hold simple values directly. There are eight primitive data types in Java:
+    - **byte:** 8-bit signed integer. Range: -128 to 127.
+    - **short:** 16-bit signed integer. Range: -32,768 to 32,767.
+    - **int:** 32-bit signed integer. Range: -2,147,483,648 to 2,147,483,647.
+    - **long:** 64-bit signed integer. Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+    - **float:** 32-bit floating-point number.
+    - **double:** 64-bit floating-point number.
+    - **char:** 16-bit Unicode character. Range: '\u0000' (0) to '\uffff' (65,535).
+    - **boolean:** Represents true or false.
+2. **Reference/Object Data Types:**
+Reference data types are objects that are instances of classes. These include:
+    - **Classes**
+    - **Interfaces**
+    - **Arrays**
+
+Variables of reference types don't store the actual data; rather, they store references (memory addresses) to the location where the data is stored.
+
+---
