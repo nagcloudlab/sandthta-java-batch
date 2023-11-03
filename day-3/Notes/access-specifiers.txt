@@ -1,0 +1,22 @@
+
+
+  Proj
+
+    - com.example.p1
+        A
+        B extends A
+        C
+    - com.example.p2
+        D extends A
+        E
+
+
+            ---------------------------------------------------------------------------
+            same-package                                 | other-package
+            ---------------------------------------------------------------------------
+            type(A)        sub-type(B)      other-type(C)| sub-type(D)  other-type(E)
+            ---------------------------------------------------------------------------
+private       Y             N              N                  N           N
+              Y             Y              Y                  N           N
+protected     Y             Y              Y                  Y           N
+public        Y             Y              Y                  Y           Y

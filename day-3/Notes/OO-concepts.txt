@@ -1,0 +1,29 @@
+
+
+
+
+Object concepts
+----------------------
+
+
+1.Abstraction / Interface
+    => advertise essential features
+    why we need ?
+    -> easy to use/learn by dependent
+    -> loose-coupling b/w dependent & dependency
+
+2. Ecapsulation / Implementation
+
+    => internal Implementation of what we abstracted
+    why we need ?
+    => to hide complexity to outside-world
+
+3. Inheritance 
+    => re-use common data/behavior from more generalized-type to specilized-type
+
+4. Polymorphism
+    => do same-behavior in different way based on input/context
+
+
+
+

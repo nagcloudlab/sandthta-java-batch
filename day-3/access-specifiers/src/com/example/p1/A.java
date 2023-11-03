@@ -1,7 +1,6 @@
-package p1;
+package com.example.p1;
 
 public class A {
-
     // variables
     private int pri=1;
     int de=2;
@@ -15,5 +14,4 @@ public class A {
         System.out.println(pro);
         System.out.println(pub);
     }
-
 }

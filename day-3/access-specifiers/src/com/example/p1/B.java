@@ -1,4 +1,12 @@
-package p1;
+package com.example.p1;
 
 public class B extends A{
+
+    public void bObjMethod(){
+        //System.out.println(pri);
+        System.out.println(de);
+        System.out.println(pro);
+        System.out.println(pub);
+    }
+
 }
