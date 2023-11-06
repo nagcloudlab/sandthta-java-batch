@@ -1,0 +1,160 @@
+# Money Transfer System
+
+---
+
+!https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3e716404-5520-4273-855b-99443b4935ab/Untitled.png
+
+---
+
+know data model
+
+- Account
+- Transaction
+- Customer
+- …
+
+---
+
+S/w Application
+
+Layer(s)
+
+1. service / business
+    
+    > to process business-data
+    > 
+2. data/repository layer
+    
+    > to persist business-data
+    > 
+
+---
+
+1. Service Layer
+    1. TransferService
+    2. ..
+2. data/repository
+    1. AccountRepository
+    2. …
+
+---
+
+design issues
+
+- **tight-coupling between dependent & dependency object's implementation**
+    
+    > can't extend with new features easily
+    > 
+- **unit-testing not possible**
+    
+    > dev / bug-fix slow
+    > 
+
+performance issues
+
+- **too many duplicate dependency instances**
+    
+    > too much resource ( cpu / memory ) consumption & bad responsive to end-user
+    > 
+
+---
+
+why these issues ?
+
+> dependent-component managing/creating it's own dependency component
+> 
+
+---
+
+solution:
+
+> don't create dependency  in dependent’s home ( class ) , 
+do lookup on factory.   (**Factory Design Pattern)**
+> 
+
+---
+
+limitation with factory-pattern only
+
+> factory location tight-coupling
+> 
+
+i.e dependent component must know from which factory dependency component is available
+
+---
+
+best solution:
+
+> don't create & find the dependency , inject by third-party/container 
+( dependency inversion principle )
+> 
+
+how to implement IOC ( Inversion of Control )
+
+by
+
+- dependency injection ( DI )
+
+how to implement DI ?
+
+- via constructor  : for required dependency
+- via set method  : for optional dependency
+
+---
+
+OO concepts
+
+1. Abstraction
+2. Encapsulation
+3. Polymorphic
+4. Inheritance
+
+---
+
+OO  principles a.k.a S.O.L.I.D principles
+
+1. **Single Responsibility Principle**
+    
+    > “One class should have one and only one responsibility”
+    > 
+2. **Open Closed Principle**
+    
+    > “Software components should be open for extension, but closed for modification”
+    > 
+3. **Liskov’s Substitution Principle**
+    
+    > “Derived types must be completely substitutable for their base types”
+    > 
+4. **Interface Segregation Principle**
+    
+    > “Clients should not be forced to implement unnecessary methods which they will not use”
+    > 
+5. **`Dependency Inversion Principle / Inversion of Control ( IOC )`**
+    
+    > “Depend on abstractions, not on concretions”
+    > 
+
+---
+
+How to implement IOC ?
+
+- dependency injection ( DI )
+
+ how to inject dependency ?
+
+1. constructor-level
+    - required dependency
+2. setter-level
+    - optional dependency
+
+---
+
+!https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ca1f2c2f-64eb-4e12-88c2-be98963c014c/Untitled.png
+
+---
+
+Spring configuration
+
+1. XML    ( outdated )
+2. Annotation  ( good for classes that we write )
+3. Java-config  ( good for every classes )
