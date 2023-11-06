@@ -1,0 +1,67 @@
+
+
+
+data structure
+------------------------
+
+ organized memory for data-elements,
+ to do CRUDSS operations/algorithms
+
+ C -> create
+ R -> read
+ U -> update
+ D -> delete
+ S -> search
+ S -> sort
+
+----------------------------------------------------------------
+
+collection
+
+    => ready-to-use data-structure in java
+
+----------------------------------------------------------------
+
+type of collections in java 
+
+1. List
+
+    -> index based
+    -> ordered
+    -> hold duplicate data-elements ( objects ) 
+
+2. Set
+
+    -> no-index
+    -> unique data-elements ( objects )
+
+3. Map
+
+    -> every data-element mapped by user-defined indentity ( key )
+
+
+----------------------------------------------------------------
+Collection class(s)
+----------------------------------------------------------------
+
+
+A. List
+
+    1. Vector ( dynamic-array ) ( thread-safe/synchronized )
+    2. ArrayList ( dynamic-array )
+    3. LinkedList ( double-linked-list )
+
+B. Set
+
+    1. TreeSet ( b-tree ) ( sorted )
+    2. HashSet ( hashtable ) ( un-ordered)
+    3. LinkedHashSet ( hashtable+linklist ) ( ordered )
+
+C. Map
+
+    1. TreeMap ( b-tree ) ( sorted )
+    2. HashMap ( hashtable ) ( un-ordered)
+    3. LinkedHashMap ( hashtable+linklist ) ( ordered )
+
+
+https://static.javatpoint.com/images/java-collection-hierarchy.png
