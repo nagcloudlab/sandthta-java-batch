@@ -1,5 +1,7 @@
 package com.example.service;
 
+import com.example.exception.AccountBalanceException;
+import com.example.exception.AccountNotFoundException;
 import com.example.factory.AccountRepositoryFactory;
 import com.example.model.Account;
 import com.example.repository.AccountRepository;
@@ -22,8 +24,24 @@ public class UPITransferService implements TransferService {
         //AccountRepository accountRepository = AccountRepositoryFactory.getAccountRepository("mysql"); // Don't find
         // Load source account
         Account sourceAccount = accountRepository.loadAccount(sourceAccNumber);
+        if(sourceAccount == null){
+            AccountNotFoundException anfe=new AccountNotFoundException("source account not found");
+            anfe.setNumber(sourceAccNumber);
+            throw anfe;
+        }
         // Load destination account
         Account destinationAccount = accountRepository.loadAccount(destinationAccNumber);
+        if(destinationAccount == null){
+            AccountNotFoundException anfe=new AccountNotFoundException("destination account not found");
+            anfe.setNumber(destinationAccNumber);
+            throw anfe;
+        }
+        // source balance >= amount
+        if(sourceAccount.getBalance()<amount){
+            AccountBalanceException abe=new AccountBalanceException("source balance not enough");
+            abe.setBalance(sourceAccount.getBalance());
+            throw abe;
+        }
         // debit
         sourceAccount.setBalance(sourceAccount.getBalance() - amount);
         // credit
