@@ -27,7 +27,7 @@ type of collections in java
 1. List
 
     -> index based
-    -> ordered
+    -> ordered , we can explicitly sort
     -> hold duplicate data-elements ( objects ) 
 
 2. Set

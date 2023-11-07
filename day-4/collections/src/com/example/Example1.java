@@ -1,4 +1,4 @@
-package com.example.generics;
+package com.example;
 
 // generics => java 1.5
 
@@ -17,7 +17,7 @@ class Box<E> {
     }
 }
 
-public class Example {
+public class Example1 {
     public static void main(String[] args) {
 
         Box<String> box1 = new Box<>(); // with generic class => can create type-safety object
