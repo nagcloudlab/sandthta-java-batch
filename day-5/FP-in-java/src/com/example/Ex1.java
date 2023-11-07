@@ -24,9 +24,7 @@ public class Ex1 {
         //Collections.sort(accounts, (o1, o2) -> Double.compare(o2.getBalance(), o1.getBalance()));
         accounts.sort((o1, o2)->Double.compare(o1.getBalance(), o2.getBalance())); // FP
 
-
         display(accounts);
-
 
     }
 
