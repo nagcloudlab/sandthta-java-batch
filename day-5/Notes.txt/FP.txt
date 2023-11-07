@@ -1,0 +1,27 @@
+
+
+style of programming
+------------------------
+
+
+1. imperative style
+
+    => solving any problem with step-by-step approach
+    intention & implementation mixed together
+
+
+2. declarative/ parameterization style
+    => separate implementation from various intention(s)
+
+    with anonymous inner-class's object , we were declarative
+    programming in java till java 1.7
+
+
+    decarative programming with Function ==> FUnctional Programming
+
+
+
+
+why we need FP ?
+
+    => to write compact/concise code

@@ -1,2 +1,5 @@
-package com.example.model;public class DishType {
+package com.example.model;
+
+public enum DishType {
+    MEAT, FISH, OTHER
 }

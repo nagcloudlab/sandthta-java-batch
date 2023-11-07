@@ -1,0 +1,12 @@
+
+data-processing-pipeline ==> streams-api
+
+    input-data
+        - filtering
+        - sorting
+        - transformation
+        - aggregation
+        - grouping
+        - max,min
+        - ................
+    output-data    

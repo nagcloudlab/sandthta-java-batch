@@ -1,0 +1,27 @@
+
+
+
+process vs thread
+--------------------
+
+process
+
+    => whole execution 
+    => own's private memory
+
+thread
+
+    => independent-execution within process
+    => own stack-memory
+    => shared heap-memory
+
+--------------------------------------------------------
+
+s/w
+
+    2 types tasks
+
+    - computation
+    - io ( read/write operations on file-system/database / n/w call)
+
+--------------------------------------------------------
