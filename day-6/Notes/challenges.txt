@@ -1,0 +1,35 @@
+
+
+challenges while developing enterprise java-applications
+
+    - managing business component(s) 
+      based on the dependency-inversion principle
+    - connection management with external services
+    - transaction management ( ACID )
+    - exception handling
+    - security support ( authentication / authorization )
+    - web support
+    - remoting
+    - ....
+
+
+solution-1:
+
+    - using JEE based application-server
+
+      - Weblogic 
+      - Websphere
+      - Jboss
+      ..
+
+solution-2:
+
+    - lightweight solution
+
+        - Spring Framework
+
+      
+
+
+
+

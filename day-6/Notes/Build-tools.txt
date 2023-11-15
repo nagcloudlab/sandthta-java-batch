@@ -1,0 +1,19 @@
+
+
+build
+    => prepare the source-code for production deployment
+
+    steps
+
+        - compile
+        - test
+        - package
+        ....
+how to automate build process ? 
+
+ for Java developers,
+
+    - Maven -> XML configuration
+    // or
+    - Gradle -> Groovy configuration
+
