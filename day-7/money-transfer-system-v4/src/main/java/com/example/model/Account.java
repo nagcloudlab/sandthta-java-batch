@@ -1,8 +1,18 @@
 package com.example.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="accounts")
 public class Account {
 
+    @Id
+    //@Column(name = "number")
     private String number;
+    //@Column(name="balance")
     private double balance;
 
     public Account(String number, double balance) {
@@ -13,6 +23,8 @@ public class Account {
     public Account(String number) {
         this.number = number;
     }
+
+    public Account(){}
 
     public String getNumber() {
         return number;

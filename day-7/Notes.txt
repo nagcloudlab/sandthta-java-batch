@@ -1,0 +1,8 @@
+
+
+
+database:
+
+    - SQL database
+        - MySQL
+        - H2 ( in-memory SQL database for dev | testing)
