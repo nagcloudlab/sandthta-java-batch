@@ -1,0 +1,42 @@
+
+
+----------------------------------------------------------------
+money-transfer-system
+----------------------------------------------------------------
+
+    1. data-source
+        -> SQL 
+            dev-envi - H2
+            production-envi - MySQL
+
+    2. application
+        language: java
+        framework: spring with spring-boot
+
+----------------------------------------------------------------
+
+data-source
+    tables:
+        - accounts
+        - transactions
+----------------------------------------------------------------
+
+application
+
+    model/entity
+
+        - Account
+        - Transaction
+
+    layer(s)
+
+    1.data/repository layer ( persisting logic )
+        - AccountRepository
+        - TransactionRepository
+    2.service ( processing logic )
+        - TransferService
+    3.web ( request/response logic)
+        - TransferController
+        - TransactionHistoryController
+
+----------------------------------------------------------------            

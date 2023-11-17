@@ -1,2 +1,5 @@
-package com.example.entity;public enum TxnType {
+package com.example.entity;
+
+public enum TxnType {
+    DEBIT,CREDIT
 }
