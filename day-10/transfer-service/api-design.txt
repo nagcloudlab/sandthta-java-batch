@@ -1,0 +1,18 @@
+
+
+POST /api/v1/transfer
+
+    request-payload: application/json
+
+    {
+        "amount":10.00,
+        "source":"123",
+        "destination":"456
+    }
+
+    response-payload: application/json
+    
+    {
+        "status":"success",
+        "transaction-id":12232323
+    }
